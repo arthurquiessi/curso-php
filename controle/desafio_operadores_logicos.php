@@ -30,7 +30,18 @@
 </style>
 
 <?php
-$var1 = $_POST['t1'];
-$var2 = $_POST['t2'];
+$rec1 = $_POST['t1'];
+$rec2 = $_POST['t2'];
 
-// echo $var1, $var2;
+$var1 = ((bool) $rec1);
+$var2 = ((bool) $rec2);
+
+// var_dump($var1, $var2);
+
+if ($var1 && $var2) {
+    echo "<p>Compra TV 50' e tomar um sorvete pra comemorar</p>";
+} elseif ($var1 || $var2) {
+    echo "<p>Compra TV 32' e tomar um sorvete pra comemorar</p>";
+} else {
+    echo "<p>Fica em casa mais saudável</p>";
+}
