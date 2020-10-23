@@ -20,9 +20,9 @@ echo '<br>' . is_array($dadosCompletos);
 echo '<br>' . count($dadosCompletos) . ' Elementos';
 
 echo '<br>';
-$indice = array_rand($dadosCompletos);
+$indice = array_rand($dadosCompletos); // Aqui so pega o índice
 echo $indice . '<br>';
-echo "$indice  = $dadosCompletos[$indice]";
+echo "$indice  = $dadosCompletos[$indice]"; // Depois traz o valor do índice referente
 echo '<br>';
 echo "{$dadosCompletos['indice']}";
 echo "${dadosCompletos['indice']}";
