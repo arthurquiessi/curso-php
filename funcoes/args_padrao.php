@@ -15,7 +15,7 @@ echo '<br><hr>';
 // **** Sempre colocar o valor padrão por último ****
 function anotarPedido($comida, $bebida = 'Água') {
     echo "Para comer: $comida <br>";
-    echo "Para beber: $beber <br>";
+    echo "Para beber: $bebida <br>";
 }
 
 anotarPedido('Hamburguer');
